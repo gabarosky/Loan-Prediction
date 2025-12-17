@@ -106,8 +106,8 @@ All steps are wrapped in a single `scikit-learn Pipeline` to ensure consistency 
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/gabarosky/Loan-Prediction.git
+cd Loan-Prediction
 ````
 
 ### 2. Create a virtual environment (recommended)
