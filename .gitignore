@@ -8,11 +8,6 @@ env/
 venv/
 .venv/
 
-# Sensitive data
-*.csv
-*.pkl
-models/ (but keep necessary .pkl files)
-
 # Streamlit
 .streamlit/
 
@@ -26,6 +21,9 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# CatBoost
+catboost_info/
 
 # Logs
 *.log

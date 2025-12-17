@@ -49,6 +49,6 @@ class FeatureEngineer(BaseEstimator, TransformerMixin):
         X_transformed['IncomeImpact'] = X_transformed['LoanInstallment'] / denom
 
         # If IncomeImpact is inf or NaN, set to a large number or NaN (downstream imputer can handle)
-        X_transformed['IncomeImpact'].replace([np.inf, -np.inf], np.nan, inplace=True)
+        X_transformed['IncomeImpact'] = X_transformed['IncomeImpact'].replace([np.inf, -np.inf], np.nan)
 
         return X_transformed

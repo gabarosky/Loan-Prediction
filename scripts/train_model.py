@@ -70,7 +70,7 @@ def load_and_clean_data():
             df[col] = df[col].astype(str)
 
     if 'Loan_Status' in df.columns:
-        df['Loan_Status'].replace({'Y': 1, 'N': 0}, inplace=True)
+        df['Loan_Status'] = df['Loan_Status'].map({'Y': 1, 'N': 0})
 
     # drop entries with missing values in 'LoanAmount' and 'Loan_Amount_Term'
     if 'LoanAmount' in df.columns and 'Loan_Amount_Term' in df.columns:
