@@ -44,7 +44,9 @@ It includes data preprocessing, feature engineering, model training, and an inte
 │   └── trained_model.pkl    # Trained ML pipeline (generated)
 │
 ├── notebook/
-│   └── *.ipynb              # Experimental and exploratory notebooks
+│   ├── data_exploration.ipynb  # EDA, treatment of missings, outliers and strange values.
+│   ├── feature.ipynb           # Feature engineering
+│   └── machine_learning.ipynb  # Test, validation and selection of model
 │
 ├── config.py                # Centralized project paths
 ├── requirements.txt         # Python dependencies
