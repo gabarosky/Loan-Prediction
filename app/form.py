@@ -22,7 +22,7 @@ def show_prediction_form(pipeline):
             education =  st.selectbox("Education", options=["Graduate", "Not Graduate", "Not Specified"])
             dependents = st.number_input("Dependets", min_value=0, max_value=20, step=1)            
         with col2:
-            applicantincome = st.number_input("Applicant Income", min_value=0, max_value=100000)
+            applicantincome = st.number_input("Applicant Income", min_value=1, max_value=100000)
             self_employed =  st.selectbox("Self employed?", options=["Yes", "No"])
             credit_history =  st.selectbox("Do you have credit history?", options=[ "No","Yes"])
             coapplicantincome = st.number_input("Coapplicant Income", min_value=0, max_value=100000, value=0)
@@ -35,7 +35,7 @@ def show_prediction_form(pipeline):
                                      step=60
                                      )   
         property_area = st.radio("Property Area", options=["Urban", "Semiurban", "Rural"])
-        loanamount = st.number_input("Loan amount", min_value=0, max_value=700)
+        loanamount = st.number_input("Loan amount", min_value=1, max_value=700)
         
         # Submit button
         submitted = st.form_submit_button("🎯 Calculate Prediction", type="primary")

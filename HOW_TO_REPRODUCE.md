@@ -8,7 +8,7 @@ model training, and generation of the trained pipeline artifact.
 
 ## 🧱 System Requirements
 
-- Python **3.9+** 
+- Python **3.11+** 
 - pip or conda
 - OS: Windows / Linux / macOS
 
@@ -25,7 +25,7 @@ cd loan-prediction-app
 ### 2. Create a virtual environment
 
 ```bash
-conda create -n loan_app python=3.10
+conda create -n loan_app python=3.11
 conda activate loan_app
 ```
 
