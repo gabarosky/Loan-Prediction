@@ -28,7 +28,7 @@ It includes data preprocessing, feature engineering, model training, and an inte
 
 .
 ├── app/
-│   ├── main.py              # Streamlit entry point
+│   ├── __init__
 │   ├── form.py              # UI form and results display
 │   └── prediction.py        # Model loading and inference
 │
@@ -48,9 +48,13 @@ It includes data preprocessing, feature engineering, model training, and an inte
 │   ├── feature.ipynb           # Feature engineering
 │   └── machine_learning.ipynb  # Test, validation and selection of model
 │
+│   main.py                  # Streamlit entry point
 ├── config.py                # Centralized project paths
 ├── requirements.txt         # Python dependencies
+│   HOW_TO_REPRODUCE.md
+│   MODEL_CARD.md
 └── README.md
+
 
 ````
 
@@ -167,8 +171,28 @@ Open your browser at:
 ```
 http://localhost:8501
 ```
+---
+
+## ☁️ Deployment (Streamlit Cloud)
+
+⚠️ **Important – Python version selection**
+
+When deploying this application on **Streamlit Cloud**, you must **manually select Python 3.11**
+from the Python version dropdown in the deployment interface.
+
+Although a `runtime.txt` file is included in the repository, Streamlit Cloud currently prioritizes
+the Python version selected in the UI over repository configuration.
+Failing to select Python 3.11 may result in dependency installation errors (e.g. with `catboost`).
+
+**Steps:**
+1. Create a new app in Streamlit Cloud
+2. Select **Python 3.11** from the version dropdown
+3. Deploy the application
+
+This is a known platform limitation and not a project-specific issue.
 
 ---
+
 
 ## 🔁 Reproducibility Notes
 

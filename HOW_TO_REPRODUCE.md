@@ -8,7 +8,9 @@ model training, and generation of the trained pipeline artifact.
 
 ## 🧱 System Requirements
 
-- Python **3.11+** 
+- Python **3.11** 
+ - ⚠️ When deploying the application on **Streamlit Cloud**, Python **3.11**
+    must be explicitly selected in the deployment settings.
 - pip or conda
 - OS: Windows / Linux / macOS
 
@@ -143,7 +145,7 @@ No errors should occur.
 Once the model is trained:
 
 ```bash
-streamlit run app/main.py
+streamlit run main.py
 ```
 
 The application will load the trained pipeline and allow interactive predictions.
