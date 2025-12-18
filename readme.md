@@ -22,6 +22,14 @@ It includes data preprocessing, feature engineering, model training, and an inte
 
 ---
 
+## 🌐 Live Demo
+
+The application is deployed on **Streamlit Cloud** and can be accessed here:
+
+🔗 **https://loan-prediction-gabarosky.streamlit.app/**
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -163,7 +171,7 @@ This process will:
 ## 🖥️ Run the Streamlit App
 
 ```bash
-streamlit run app/main.py
+streamlit run main.py
 ```
 
 Open your browser at:
