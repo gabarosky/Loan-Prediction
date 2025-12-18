@@ -71,6 +71,8 @@ def show_prediction_form(pipeline):
         # Display results
         show_prediction_results(label, user_input, prob)
         
+        st.markdown("For more details, see the [GitHub repository](https://github.com/gabarosky/Loan-Prediction)")
+        
 
 def show_prediction_results(prediction, user_input, prob=None):
     """Displays the prediction results in an attractive way"""
