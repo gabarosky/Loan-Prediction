@@ -1,5 +1,5 @@
 import streamlit as st
-from .prediction import make_prediction
+from app.prediction import make_prediction
 
 def show_prediction_form(pipeline):
     """Displays the interactive prediction form"""
